@@ -23,7 +23,7 @@ body {
 }
 
 /*==========================================
-PRE LOADER 
+PRE LOADER
 ==========================================*/
 
 .preloader {
@@ -140,7 +140,7 @@ h3 {
 }
 h4,
 h5 {
-    
+
     font-weight: 300;
     margin: 0;
     line-height: 2rem;
@@ -157,7 +157,7 @@ h2 {
     line-height: 3rem;
     margin-bottom: .9rem;
 	text-transform:uppercase;
-	color:#3879D9;	
+	color:#3879D9;
 }
 h3 {
     font-weight: 300;
@@ -378,6 +378,27 @@ Button
     margin-right: 15px;
     border-radius: 0px;
 }
+.b24-web-form-popup-btn-1.active.focus,
+.b24-web-form-popup-btn-1.active:focus,
+.b24-web-form-popup-btn-1.active:hover,
+.b24-web-form-popup-btn-1:active.focus,
+.b24-web-form-popup-btn-1:active:focus,
+.b24-web-form-popup-btn-1:active:hover,
+.open > .dropdown-toggle.b24-web-form-popup-btn-1.focus,
+.open > .dropdown-toggle.b24-web-form-popup-btn-1:focus,
+.open > .dropdown-toggle.b24-web-form-popup-btn-1:hover,
+.b24-web-form-popup-btn-1.focus,
+.b24-web-form-popup-btn-1:focus,
+.b24-web-form-popup-btn-1.disabled,
+.b24-web-form-popup-btn-1.disabled:hover {
+    color: #ffffff;
+    background-color: #d6962c;
+    border-color: #d6962c;
+}
+.btn {
+    margin-right: 15px;
+    border-radius: 0px;
+}
 /*.btn-default:active, .btn-default:hover  {
     background: transparent;
 }*/
@@ -428,7 +449,13 @@ button.btn-lg:hover{
 .btn-primary:hover {
     background: #d6962c;
 }
-
+.b24-web-form-popup-btn-1 {
+    color: #ffffff;
+}
+.b24-web-form-popup-btn-1:active,
+.b24-web-form-popup-btn-1:hover {
+    background: #d6962c;
+}
 .btn-default {
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -463,6 +490,26 @@ button.btn-lg:hover{
     border-color: #d6962c;
 }
 .btn-primary:hover {
+    border-color: #d6962c;
+    color: #fff;
+}
+
+.b24-web-form-popup-btn-1 {
+    background-color: #E7A331;
+    color: #ffffff;
+    border: 2px solid #E7A331;
+    text-transform: uppercase;
+	border-radius:4px;
+}
+.b24-web-form-popup-btn-1:before,
+.b24-web-form-popup-btn-1:after {
+    background-color: #ffffff;
+}
+.b24-web-form-popup-btn-1:focus {
+    background-color: #d6962c;
+    border-color: #d6962c;
+}
+.b24-web-form-popup-btn-1:hover {
     border-color: #d6962c;
     color: #fff;
 }
@@ -597,15 +644,15 @@ a.navbar-brand.our_logo{
     padding-top: 0px;
     padding-bottom: 0px;
     position: fixed;
-    top: 0; 
-	left: 0; 
-	right: 0; 
+    top: 0;
+	left: 0;
+	right: 0;
 	z-index: 300;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     background-color: #000;
 	height:80px;
-	
+
 }
 
 .menu-scroll .header_top_menu{
@@ -618,7 +665,7 @@ a.navbar-brand.our_logo{
 .main_menu_bg{
 	background:rgba(0, 0, 0, .45);
 	height: 80px;
-	
+
 }
 .navbar-default {
     background-color: transparent;
@@ -641,7 +688,7 @@ a.navbar-brand.our_logo{
 
 .main_menu_bg .navbar {
    margin-bottom: 0px;
-	
+
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -659,7 +706,7 @@ a.navbar-brand.our_logo{
 	background-size:cover;
 }
 .main_slider {
-	
+
 }
 .main_slider .main_slider_content h1{
 font-size: 6rem;
@@ -667,7 +714,7 @@ font-size: 6rem;
     color: #fff;
     line-height: 6rem;
     margin:0px 0px 60px 0px;
-}	
+}
 .main_slider_content{
 	padding:250px 0px 200px 0px;
 	width:70%;
@@ -702,7 +749,7 @@ font-size: 6rem;
 	color:#000000;
 }
 .single_abouts_text h3{
-	color:#000000;	
+	color:#000000;
 }
 
 
@@ -714,7 +761,7 @@ font-size: 6rem;
 	-o-background-size: cover;
 	background-size: cover;
 	width: 100%;
-	overflow: hidden;	
+	overflow: hidden;
 }
 .main_features_content_area{
 	padding:120px 0px;
@@ -740,7 +787,7 @@ font-size: 6rem;
 	-o-background-size: cover;
 	background-size: cover;
 	width: 100%;
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 .portfolio_content{
@@ -807,7 +854,7 @@ font-size: 6rem;
 /*Amazing Deliceas Section css */
 .ourPakeg .main_pakeg_content .head_title h3{
 	color:#fff;
-	
+
 }
 .ourPakeg .main_pakeg_content .head_title h4{
 	color:#fff;
@@ -822,7 +869,7 @@ font-size: 6rem;
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  overflow: hidden;	
+  overflow: hidden;
   padding-bottom:120px;
 }
 
@@ -834,17 +881,17 @@ font-size: 6rem;
 }
 .single_pakeg_two{
 	background:url(../images/newstwo.jpg) right center no-repeat;
-	padding:30px;	
+	padding:30px;
 	overflow:hidden;
-	margin-top:60px;	
-	
+	margin-top:60px;
+
 }
 .single_pakeg_three{
 	background:url(../images/newsthree.jpg) left center no-repeat;
-	padding:30px;	
+	padding:30px;
 	overflow:hidden;
-	margin-top:60px;	
-	
+	margin-top:60px;
+
 }
 
 .single_pakeg_text{
@@ -857,7 +904,7 @@ font-size: 6rem;
     background: url(../images/pkli.png) no-repeat left center;
     padding: 15px 0px 15px 60px;
     margin-top: 20px;
-	
+
 }
 
 /* Mobail Apps Section css */
@@ -898,7 +945,7 @@ font-size: 6rem;
 	font-size:1.800rem;
 	color:#fff;
 	display:block;
-	
+
 }
 
 .single_monail_apps_text{
@@ -934,7 +981,7 @@ font-size: 6rem;
 .single_widget h3{
     font-size:1.875rem;
 
-	font-family: 'Pacifico', cursive;	
+	font-family: 'Pacifico', cursive;
 }
 .single_widget_info p{
 	margin-top:40px;
