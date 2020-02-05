@@ -972,53 +972,11 @@
 		var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
 		var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
 	})(window, document, 'script', 'cloud.roistat.com', '819e89f305a798769a5647d00c88454f');
-		
 		window.roistatVisitCallback = function (visitId) {
 		(function(w,d,u){
 			var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
 			var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-				})
-		window.addEventListener('onBitrixLiveChat', function(event)
-{
-  var widget = event.detail.widget;
-
-  // Установка дополнительных данных (публикуется при начале новой сессии, расширенный формат)
-  widget.setCustomData([
-    {"USER": {
-      "NAME" : "Виктор Иванов",
-      "AVATAR" : "http://files.shelenkov.com/images/avatar-ivanov.jpg",
-    }},
-    {"GRID": [
-      {
-        "NAME" : "E-mail",
-        "VALUE" : "victor@ivanov.ru",
-        "DISPLAY" : "LINE",
-      },
-      {
-        "NAME" : "Код клиента",
-        "VALUE" : "12234",
-        "COLOR" : "#ff0000",
-        "DISPLAY" : "LINE"
-      },
-      {
-		"roistatID" : visitId,  
-	  },
-	  {
-        "NAME": "Сайт",
-        "VALUE": location.hostname,
-        "DISPLAY": "LINE"
-      },
-      {
-        "NAME": "Страница",
-        "VALUE": "[url="+location.href+"]"+(document.title || location.href)+"[/url]",
-        "DISPLAY": "LINE"
-      },
-    ]}
-  ]);
-  
-});
-		
-			(window,document,'https://crm-firstbit.ru/upload/crm/site_button/loader_1_07nckv.js');
+				})(window,document,'https://crm-firstbit.ru/upload/crm/site_button/loader_1_07nckv.js');
 		window.Bitrix24WidgetObject = window.Bitrix24WidgetObject || {};
 			window.Bitrix24WidgetObject.handlers = {
 				'form-init': function (form) {
@@ -1027,7 +985,14 @@
 					};
 				}
 			};
+		
+		
 		}
+	window.addEventListener('onBitrixLiveChat', function(event)
+	{
+	  var widget = event.detail.widget;
+	  widget.setCustomData('roistatID': visitId); 
+	
 </script> 
 </body>
 </html>
