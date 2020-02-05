@@ -986,13 +986,47 @@
 				}
 			};
 		}
-	</script>
-<script type="text/javascript"> 
-	window.addEventListener('onBitrixLiveChat', function(event)
-	{
-	  var widget = event.detail.widget;
-	  widget.setCustomData("[b]Виктор Иванов[/b] (victor@ivanov.ru)");
-	});
 </script> 
+<script type="text/javascript"> 
+window.addEventListener('onBitrixLiveChat', function(event)
+{
+  var widget = event.detail.widget;
+
+  // Установка дополнительных данных (публикуется при начале новой сессии, расширенный формат)
+  widget.setCustomData([
+    {"USER": {
+      "NAME" : "Виктор Иванов",
+      "AVATAR" : "http://files.shelenkov.com/images/avatar-ivanov.jpg",
+    }},
+    {"GRID": [
+      {
+        "NAME" : "E-mail",
+        "VALUE" : "victor@ivanov.ru",
+        "DISPLAY" : "LINE",
+      },
+      {
+        "NAME" : "Код клиента",
+        "VALUE" : "12234",
+        "COLOR" : "#ff0000",
+        "DISPLAY" : "LINE"
+      },
+      {
+		"roistatID" : visitId,  
+	  },
+	  {
+        "NAME": "Сайт",
+        "VALUE": location.hostname,
+        "DISPLAY": "LINE"
+      },
+      {
+        "NAME": "Страница",
+        "VALUE": "[url="+location.href+"]"+(document.title || location.href)+"[/url]",
+        "DISPLAY": "LINE"
+      },
+    ]}
+  ]);
+  
+});
+</script>
 </body>
 </html>
