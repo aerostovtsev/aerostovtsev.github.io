@@ -963,69 +963,11 @@
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
 <script src="js/script.js"></script>
-
-
 <script>
-	(function(w, d, s, h, id) {
-		w.roistatProjectId = id; w.roistatHost = h;
-		var p = d.location.protocol == "https:" ? "https://" : "http://";
-		var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
-		var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
-	})(window, document, 'script', 'cloud.roistat.com', '819e89f305a798769a5647d00c88454f');
-</script>
-<script>
-		window.roistatVisitCallback = function (visitId) 
-		{
-		(function(w,d,u){
+	(function(w,d,u){
 			var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
 			var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-				})(window,document,'https://crm-firstbit.ru/upload/crm/site_button/loader_1_07nckv.js');
-		window.Bitrix24WidgetObject = window.Bitrix24WidgetObject || {};
-			window.Bitrix24WidgetObject.handlers = {
-				'form-init': function (form) {
-					form.presets = {
-						'roistatID': visitId
-					};
-				}
-			};
-		}
-</script> 
-<script type="text/javascript"> 
-	window.addEventListener('onBitrixLiveChat', function(event)
-	{
-	  var widget = event.detail.widget;
-	  widget.setCustomData([
-    {"USER": {
-      "NAME" : "Виктор Иванов",
-      "AVATAR" : "http://files.shelenkov.com/images/avatar-ivanov.jpg",
-    }},
-    {"GRID": [
-      {
-        "NAME" : "E-mail",
-        "VALUE" : "victor@ivanov.ru",
-        "DISPLAY" : "LINE",
-		'roistatID': visitId
-					
-      },
-      {
-        "NAME" : "Код клиента",
-        "VALUE" : "12234",
-        "COLOR" : "#ff0000",
-        "DISPLAY" : "LINE"
-      },
-      {
-        "NAME": "Сайт",
-        "VALUE": location.hostname,
-        "DISPLAY": "LINE"
-      },
-      {
-        "NAME": "Страница",
-        "VALUE": "[url="+location.href+"]"+(document.title || location.href)+"[/url]",
-        "DISPLAY": "LINE"
-      },
-    ]}
-  ]);
-});	
-</script> 
+	})(window,document,'https://crm-firstbit.ru/upload/crm/site_button/loader_1_07nckv.js');
+</script>
 </body>
 </html>
